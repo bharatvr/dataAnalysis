@@ -16,9 +16,8 @@ echo -en '\n\n\n'
 
 
 echo "==================== Building docker image =============="
-docker build -t docker.apple.com/gbi-fw/data-analyzer:1.0.1 .
+docker build -t data-analyzer:1.0.1 .
 echo "++++++++++++++++++++ Docker image build complete +++++++++++++++++++"
 
-docker push docker.apple.com/gbi-fw/data-analyzer:1.0.1
 
-#to run docker image locally : docker run -p 8080:8080 docker.apple.com/gbi-fw/data-analyzer:1.0.0
+#to run docker image locally : docker run -p 8080:8080 data-analyzer:1.0.0
